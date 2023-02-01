@@ -1,0 +1,84 @@
+.messageBlock {
+    max-width: 700px;
+    background-color: #f2fbff;
+    border: 1px solid #c4cbcf;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+}
+
+.spanBlock{
+    position: relative;
+}
+
+.nameAndDate p,
+.nameAndDate h2 {
+    margin: 0 0 0 6px;
+}
+
+.nameAndDate p {
+    color: #808080;
+    font-size: 16px;
+}
+
+.nameAndDate h2 {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.nameAndDate {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.commentsBlock {
+    position: relative;
+}
+
+.msgTextBlock {
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #f2fbff;
+    border: 1px solid #c4cbcf;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+}
+
+.blockSpan::before,
+.blockSpan::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: -9px;
+    border: 10px solid transparent;
+    border-left: 10px solid #c4cbcf;
+}
+.blockSpan::after {
+    border-left: 10px solid #f2fbff;
+    bottom: -11px;
+    left: 31px;
+    z-index: 1;
+}
+
+.msgText {
+    margin: 0;
+}
+
+.msgTextContainer {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .nameAndDate p {
+        font-size: 12px;
+    }
+    
+    .nameAndDate h2 {
+        font-size: 16px;
+    }
+
+    .msgText {
+        font-size: 14px;
+    }
+}

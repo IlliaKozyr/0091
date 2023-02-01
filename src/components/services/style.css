@@ -1,0 +1,104 @@
+
+.servicesBlock {
+    width: 70%;
+}
+
+.progressBar1 {
+    width: 70%;
+    height: 28px;
+    background-color: #B1E19B;
+    display: flex;
+    align-items: center;
+}
+
+.progressBar2 {
+    width: 16%;
+    height: 28px;
+    background-color: #ACE2F8;
+    display: flex;
+    align-items: center;
+}
+
+.progressBar3 {
+    width: 9%;
+    height: 28px;
+    background-color: #ACE2F8;
+    display: flex;
+    align-items: center;
+    
+}
+
+.oneProgressBar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 45px;
+    margin-bottom: 3px;
+}
+
+.progressResult{
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+}
+
+.progressBar1 p,
+.progressBar2 p,
+.progressBar3 p {
+    margin: 0;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.progressBar2 p {
+    position: absolute;
+}
+
+.servicesTitle {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.servicesTotal{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 45px;
+    margin-bottom: 25px;
+}
+
+.servicesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (min-width: 320px) and (max-width: 450px) { 
+    .servicesContainer {
+        align-items: flex-start;
+    }
+
+    .servicesBlock {
+        width: 100%;
+    }
+
+    .servicesTotal{
+        padding-right: 25px;
+    }
+
+    .servicesTitle {
+        padding-right: 5px;
+    }
+
+    .oneProgressBar {
+        padding-right: 25px;
+    }
+
+    .progressResult {
+        font-size: 16px;
+    }
+
+    .servicesTotal{
+        margin-bottom: 15px;
+    }
+ }

@@ -1,0 +1,86 @@
+.avatar-wrapper {
+    display: flex;
+}
+.avatar-wrapper__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.avatar-wrapper__user-info {
+    width: 100%;
+}
+.avatar-wrapper__user-info .user-info__descriprion {
+    background: #fffbc8;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-radius: 0px 5px 5px 0;
+    z-index: -1;
+    position: relative;
+}
+.avatar-wrapper__user-info .user-info__descriprion::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    left: -40px;
+    top: -1px;
+    height: 100%;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    background: #fffbc8;
+}
+.avatar-wrapper__user-info .user-info__descriprion span {
+    display: inline-block;
+    max-width: 250px;
+}
+
+.user-info__name {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.user-info__role {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    margin-bottom: 5px;
+}
+
+.user-info__descriprion {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 0;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .user-info__descriprion {
+        font-size: 12px;
+        line-height: 15px;
+        padding-right: 5px;
+    }
+
+    .avatar-wrapper__image {
+        width: 125px;
+        height: 125px;
+    }
+
+    .user-info__name {
+        font-size: 18px;
+    }
+
+    .user-info__role {
+        font-size: 12px;
+    }
+    
+}
